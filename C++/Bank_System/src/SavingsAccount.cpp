@@ -1,15 +1,17 @@
 #include "SavingsAccount.h"
 
+using namespace std;
+
 SavingsAccount::SavingsAccount(
-    const std::string& id,
-    const std::string& owner,
+    const string& id,
+    const string& owner,
     double initialBalance
 )
     : Account(id, owner, initialBalance)
 {
 }
 
-std::string SavingsAccount::getAccountType() const
+string SavingsAccount::getAccountType() const
 {
     return "Savings";
 }

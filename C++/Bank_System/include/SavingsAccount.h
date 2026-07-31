@@ -2,17 +2,18 @@
 #define SAVINGS_ACCOUNT_H
 
 #include "Account.h"
+using namespace std;
 
 class SavingsAccount : public Account
 {
 public:
     SavingsAccount(
-        const std::string& id,
-        const std::string& owner,
+        const string& id,
+        const string& owner,
         double initialBalance
     );
 
-    std::string getAccountType() const override;
+    string getAccountType() const override;
 };
 
 #endif
