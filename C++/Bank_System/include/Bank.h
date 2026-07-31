@@ -3,56 +3,54 @@
 
 #include "Account.h"
 
-#include <memory>
+#include <memory>// for using shared_ptr type of smart pointer to manage the lifetime of Account objects
 #include <string>
 #include <vector>
-
-using namespace std;
-
+// Bank class to manage bank accounts
 class Bank
 {
 private:
-    vector<shared_ptr<Account>> accounts;
+    std::vector<std::shared_ptr<Account>> accounts;
 
-    shared_ptr<Account> findAccount(
-        const string& accountId
+    std::shared_ptr<Account> findAccount( // Helper function to find an account by ID
+        const std::string& accountId
     ) const;
 
-    void logTransaction(
-        const string& source,
-        const string& destination,
+    void logTransaction(// Helper function to save transactions
+        const std::string& source,
+        const std::string& destination,
         double amount,
-        const string& description
+        const std::string& description
     ) const;
 
 public:
-    void createAccount(
-        const string& type,
-        const string& accountId,
-        const string& ownerName,
+    void createAccount( // Helper function to log create account
+        const std::string& type,
+        const std::string& accountId,
+        const std::string& ownerName,
         double initialBalance
     );
 
     void deposit(
-        const string& accountId,
+        const std::string& accountId,
         double amount
     );
 
     void withdraw(
-        const string& accountId,
+        const std::string& accountId,
         double amount
     );
 
     void transfer(
-        const string& sourceId,
-        const string& destinationId,
+        const std::string& sourceId,
+        const std::string& destinationId,
         double amount
     );
 
-    void displayAccounts() const;
+    void displayAccounts() const;// Helper function to display all accounts
 
-    void saveAccounts() const;
-    void loadAccounts();
+    void saveAccounts() const;// Helper function to save all accounts to a file
+    void loadAccounts();//
 };
 
 #endif
