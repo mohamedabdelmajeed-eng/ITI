@@ -1,8 +1,8 @@
-#include "CheckingAccount.h"
+#include "SavingsAccount.h"
 
 using namespace std;
 
-CheckingAccount::CheckingAccount(
+SavingsAccount::SavingsAccount(
     const string& id,
     const string& owner,
     double initialBalance
@@ -11,7 +11,7 @@ CheckingAccount::CheckingAccount(
 {
 }
 
-string CheckingAccount::getAccountType() const
+string SavingsAccount::getAccountType() const
 {
-    return "Checking";
+    return "Savings";
 }
