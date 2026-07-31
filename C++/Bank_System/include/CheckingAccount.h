@@ -2,19 +2,17 @@
 #define CHECKING_ACCOUNT_H
 
 #include "Account.h"
-
-using namespace std;
-
+// CheckingAccount class derived from Account
 class CheckingAccount : public Account
 {
 public:
     CheckingAccount(
-        const string& id,
-        const string& owner,
+        const std::string& id,
+        const std::string& owner,
         double initialBalance
     );
 
-    string getAccountType() const override;
+    std::string getAccountType() const override;
 };
 
 #endif

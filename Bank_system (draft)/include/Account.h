@@ -13,7 +13,7 @@ protected:
     double balance;
 
 public:
-// Constructor to initialize account details    
+// Constructor to give start values to the member variables of the class and to check if the user enter invalid data  
 Account(
         const std::string& accountId,//& تمرير على العنوان بدل نسخه جديده منو 
         const std::string& ownerName,// const & to avoid copying and allow passing of temporary objects
