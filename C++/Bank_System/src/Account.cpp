@@ -1,6 +1,7 @@
 #include "../include/Account.h"
 
-#include <stdexcept>// used for if the user enter invalid data(throw runtime_error and invalid_argument)
+#include <iostream>
+#include <stdexcept>
 
 using namespace std;
 
@@ -15,17 +16,23 @@ Account::Account(
 {
     if (accountId.empty())
     {
-        throw invalid_argument("Account ID cannot be empty.");
+        throw invalid_argument(
+            "Account ID cannot be empty."
+        );
     }
 
     if (ownerName.empty())
     {
-        throw invalid_argument("Owner name cannot be empty.");
+        throw invalid_argument(
+            "Owner name cannot be empty."
+        );
     }
 
     if (balance < 0)
     {
-        throw invalid_argument("Initial balance cannot be negative.");
+        throw invalid_argument(
+            "Initial balance cannot be negative."
+        );
     }
 }
 
@@ -67,8 +74,18 @@ void Account::withdraw(double amount)
 
     if (amount > balance)
     {
-        throw runtime_error("Insufficient balance.");
+        throw runtime_error(
+            "Insufficient balance."
+        );
     }
 
     balance -= amount;
+}
+
+void Account::display() const
+{
+    cout << "Account ID: " << accountId << '\n';
+    cout << "Owner Name: " << ownerName << '\n';
+    cout << "Account Type: " << getAccountType() << '\n';
+    cout << "Balance: " << balance << '\n';
 }

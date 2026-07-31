@@ -1,35 +1,40 @@
-// (Header file) 
+// Header file
 
-//saving file from repeating 
+// Prevent the header file from repeating
 #ifndef ACCOUNT_H
 #define ACCOUNT_H
 
 #include <string>
 
-class Account {
+using namespace std;
+
+class Account
+{
 protected:
-    std::string accountId;
-    std::string ownerName;
+    string accountId;
+    string ownerName;
     double balance;
 
 public:
     Account(
-        const std::string& accountId,
-        const std::string& ownerName,
+        const string& accountId,
+        const string& ownerName,
         double balance
     );
 
     virtual ~Account() = default;
 
-    std::string getAccountId() const;
-    std::string getOwnerName() const;
+    string getAccountId() const;
+    string getOwnerName() const;
     double getBalance() const;
 
     void deposit(double amount);
+
     virtual void withdraw(double amount);
 
-    virtual std::string getAccountType() const = 0;
-    virtual void display() const = 0;
+    virtual string getAccountType() const = 0;
+
+    virtual void display() const;
 };
 
 #endif
