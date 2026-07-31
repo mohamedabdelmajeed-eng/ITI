@@ -1,0 +1,7 @@
+2026-08-01 01:35:08 | Source: 1001 | Destination/Operation: Create Account | Amount: 5000 | Description: New account created
+2026-08-01 01:35:48 | Source: 1002 | Destination/Operation: Create Account | Amount: 3000 | Description: New account created
+2026-08-01 01:37:29 | Source: 1001 | Destination/Operation: Deposit | Amount: 500 | Description: Money deposited
+2026-08-01 01:39:25 | Source: 1001 | Destination/Operation: Deposit | Amount: 100 | Description: Money deposited
+2026-08-01 01:39:58 | Source: 1001 | Destination/Operation: Withdraw | Amount: 1000 | Description: Money withdrawn
+2026-08-01 01:40:32 | Source: 1001 | Destination/Operation: 1002 | Amount: 2 | Description: Money transferred
+2026-08-01 02:01:47 | Source: 2000 | Destination/Operation: Create Account | Amount: 500 | Description: New account created

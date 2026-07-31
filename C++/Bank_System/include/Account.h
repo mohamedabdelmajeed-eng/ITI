@@ -1,6 +1,3 @@
-// Header file
-
-// Prevent the header file from repeating
 #ifndef ACCOUNT_H
 #define ACCOUNT_H
 

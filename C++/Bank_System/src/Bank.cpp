@@ -1,17 +1,24 @@
-// Bank.cpp this file contains the implementation of the Bank class, which manages bank accounts and transactions. It includes methods for creating accounts, depositing and withdrawing money, transferring funds between accounts, displaying account information, and saving/loading account data to/from a file.
 #include "Bank.h"
 #include "CheckingAccount.h"
 #include "SavingsAccount.h"
 
-#include <algorithm>// for using find_if algorithm to search for an account in the vector of accounts
+#include <algorithm>
 #include <ctime>
-#include <fstream> 
-#include <iomanip> 
+#include <fstream>
+#include <iomanip>
 #include <iostream>
-#include <sstream>// for dividing the line read from the file into separate components (type, accountId, ownerName, balance)
+#include <sstream>
 #include <stdexcept>
 
 using namespace std;
+
+// File paths
+const string ACCOUNTS_FILE =
+    "data/accounts.txt";
+
+const string TRANSACTIONS_FILE =
+    "data/transactions.txt";
+
 
 // Search for an account using its ID
 shared_ptr<Account> Bank::findAccount(
@@ -21,7 +28,10 @@ shared_ptr<Account> Bank::findAccount(
     auto result = find_if(
         accounts.begin(),
         accounts.end(),
-        [&accountId](const shared_ptr<Account>& account)// lambda function to compare account IDs
+
+        [&accountId](
+            const shared_ptr<Account>& account
+        )
         {
             return account->getAccountId() == accountId;
         }
@@ -32,8 +42,9 @@ shared_ptr<Account> Bank::findAccount(
         return nullptr;
     }
 
-    return *result; // return the found account or nullptr if not found
+    return *result;
 }
+
 
 // Create a new account
 void Bank::createAccount(
@@ -42,7 +53,7 @@ void Bank::createAccount(
     const string& ownerName,
     double initialBalance
 )
-{  
+{
     if (findAccount(accountId) != nullptr)
     {
         throw runtime_error(
@@ -51,7 +62,7 @@ void Bank::createAccount(
     }
 
     if (type == "Savings")
-    {  
+    {
         accounts.push_back(
             make_shared<SavingsAccount>(
                 accountId,
@@ -76,7 +87,7 @@ void Bank::createAccount(
             "Invalid account type."
         );
     }
-// Log the account creation transaction
+
     logTransaction(
         accountId,
         "Create Account",
@@ -87,7 +98,8 @@ void Bank::createAccount(
     saveAccounts();
 }
 
-// Deposit money into an account
+
+// Deposit money
 void Bank::deposit(
     const string& accountId,
     double amount
@@ -112,10 +124,11 @@ void Bank::deposit(
         "Money deposited"
     );
 
-    saveAccounts();// Save the updated account information to the file
+    saveAccounts();
 }
 
-// Withdraw money from an account
+
+// Withdraw money
 void Bank::withdraw(
     const string& accountId,
     double amount
@@ -142,6 +155,7 @@ void Bank::withdraw(
 
     saveAccounts();
 }
+
 
 // Transfer money between two accounts
 void Bank::transfer(
@@ -191,6 +205,7 @@ void Bank::transfer(
     saveAccounts();
 }
 
+
 // Display all accounts
 void Bank::displayAccounts() const
 {
@@ -201,28 +216,37 @@ void Bank::displayAccounts() const
     }
 
     cout << "\n========== Accounts ==========\n";
-  // Loop through each account in the accounts vector and call the display method to show account details
-    for (const shared_ptr<Account>& account : accounts)
+
+    for (
+        const shared_ptr<Account>& account :
+        accounts
+    )
     {
         account->display();
 
-        cout << "------------------------------\n";
+        cout
+            << "------------------------------\n";
     }
 }
 
-// Save all accounts to accounts.txt
+
+// Save accounts to data/accounts.txt
 void Bank::saveAccounts() const
 {
-    ofstream file("accounts.txt"); // ofstream is used to create and write to a file named "accounts.txt"
+    ofstream file(ACCOUNTS_FILE);
 
     if (!file)
     {
         throw runtime_error(
-            "Could not open accounts.txt for saving."
+            "Could not open data/accounts.txt "
+            "for saving."
         );
     }
 
-    for (const shared_ptr<Account>& account : accounts)
+    for (
+        const shared_ptr<Account>& account :
+        accounts
+    )
     {
         file
             << account->getAccountType() << '|'
@@ -233,13 +257,18 @@ void Bank::saveAccounts() const
     }
 }
 
-// Load accounts from accounts.txt
+
+// Load accounts from data/accounts.txt
 void Bank::loadAccounts()
-{ 
-    ifstream file("accounts.txt");  // ifstream is used to read from a file named "accounts.txt"
+{
+    ifstream file(ACCOUNTS_FILE);
 
     if (!file)
     {
+        cout
+            << "No accounts file found. "
+            << "Starting with an empty bank.\n";
+
         return;
     }
 
@@ -266,10 +295,10 @@ void Bank::loadAccounts()
         getline(stream, ownerName, '|');
         getline(stream, balanceText);
 
-        try // used to transfer the balanceText string to a double value, which represents the account balance. If the conversion fails (e.g., if the string is not a valid number), it will throw an exception that is caught in the catch block.
+        try
         {
             double loadedBalance =
-                stod(balanceText);  // stod string to double function to convert the balanceText string to a double value, which represents the account balance.
+                stod(balanceText);
 
             if (type == "Savings")
             {
@@ -293,19 +322,22 @@ void Bank::loadAccounts()
             }
             else
             {
-                cerr // cerr is used to print error messages to the standard error stream, which is typically displayed in the console or terminal. In this case, it is used to inform the user that an unknown account type was encountered while loading accounts from the file.
-                    << "Warning: Unknown account type skipped.\n";
+                cerr
+                    << "Warning: Unknown account type "
+                    << "was skipped.\n";
             }
         }
         catch (const exception&)
         {
             cerr
-                << "Warning: Invalid account data skipped.\n";
+                << "Warning: Invalid account data "
+                << "was skipped.\n";
         }
     }
 }
 
-// Save transaction information to transactions.txt
+
+// Save transaction to data/transactions.txt
 void Bank::logTransaction(
     const string& source,
     const string& destination,
@@ -314,23 +346,24 @@ void Bank::logTransaction(
 ) const
 {
     ofstream file(
-        "transactions.txt",
-        ios::app // ios::app is used to open the file in append mode
+        TRANSACTIONS_FILE,
+        ios::app
     );
 
     if (!file)
     {
         throw runtime_error(
-            "Could not open transaction log."
+            "Could not open "
+            "data/transactions.txt."
         );
     }
 
     time_t currentTime =
-        time(nullptr); // time(nullptr) is used to get the current time as a time_t value
+        time(nullptr);
 
     tm localTime{};
 
-#ifdef _WIN32  // _WIN32 is a preprocessor directive that checks for  Windows platform
+#ifdef _WIN32
     localtime_s(
         &localTime,
         &currentTime
@@ -340,10 +373,10 @@ void Bank::logTransaction(
         &currentTime,
         &localTime
     );
-#endif 
+#endif
 
     file
-        << put_time( 
+        << put_time(
             &localTime,
             "%Y-%m-%d %H:%M:%S"
         )

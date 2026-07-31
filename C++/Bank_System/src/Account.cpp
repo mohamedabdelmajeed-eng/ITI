@@ -1,4 +1,4 @@
-#include "../include/Account.h"
+#include "Account.h"
 
 #include <iostream>
 #include <stdexcept>
@@ -56,7 +56,8 @@ void Account::deposit(double amount)
     if (amount <= 0)
     {
         throw invalid_argument(
-            "Deposit amount must be greater than zero."
+            "Deposit amount must be greater "
+            "than zero."
         );
     }
 
@@ -68,7 +69,8 @@ void Account::withdraw(double amount)
     if (amount <= 0)
     {
         throw invalid_argument(
-            "Withdrawal amount must be greater than zero."
+            "Withdrawal amount must be greater "
+            "than zero."
         );
     }
 
@@ -84,8 +86,23 @@ void Account::withdraw(double amount)
 
 void Account::display() const
 {
-    cout << "Account ID: " << accountId << '\n';
-    cout << "Owner Name: " << ownerName << '\n';
-    cout << "Account Type: " << getAccountType() << '\n';
-    cout << "Balance: " << balance << '\n';
+    cout
+        << "Account ID: "
+        << accountId
+        << '\n';
+
+    cout
+        << "Owner Name: "
+        << ownerName
+        << '\n';
+
+    cout
+        << "Account Type: "
+        << getAccountType()
+        << '\n';
+
+    cout
+        << "Balance: "
+        << balance
+        << '\n';
 }
