@@ -1,0 +1,53 @@
+==========================================
+       Linux Detective Report
+==========================================
+
+1. Current Shell
+Command: ps -p $$ -o comm=
+Result: bash
+Explanation: The shell currently running in this terminal.
+
+2. Shell PID
+Command: echo $$
+Result: 9360
+Explanation: The process ID of the current shell.
+
+3. Parent PID
+Command: echo $PPID
+Result: 9341
+Explanation: The process ID of the parent process.
+
+4. Current User
+Command: whoami
+Result: mohamed
+Explanation: The user currently executing the commands.
+
+5. Current Working Directory
+Command: pwd
+Result: /home/mohamed/Linux_Tasks/Assignment1
+Explanation: The directory I am currently working inside.
+
+6. Home Directory
+Command: echo $HOME
+Result: /home/mohamed
+Explanation: The main personal directory of the current user.
+
+7. Hostname
+Command: hostname
+Result: mohamed-laptop
+Explanation: The name assigned to this Linux computer.
+
+8. Login Shell
+Command: getent passwd "$USER" | cut -d: -f7
+Result: /bin/bash
+Explanation: The default shell assigned to the user.
+
+9. PATH
+Command: echo $PATH
+Result: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+Explanation: Directories searched by Linux for executable commands.
+
+10. Number of Environment Variables
+Command: printenv | wc -l
+Result: 54
+Explanation: The total number of environment variables.
