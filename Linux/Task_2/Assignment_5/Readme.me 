@@ -1,40 +1,64 @@
-# Assignment 5 - Employee Registration System
+# Assignment 5 – Employee Registration System
 
-## Description
+## Overview
 
-This assignment implements a simple Bash script called `employee.sh`.
+This assignment implements a simple Employee Registration System using a Bash script. The script interacts with the user through the terminal, collects employee information, and displays the entered data in a clear and formatted manner.
 
-The script asks the user to enter:
+---
 
-- Employee Name
-- Age
-- Department
-- Salary
+## Objective
 
-After collecting the information, it displays all entered data in a formatted output.
+The goal of this assignment is to practice:
 
-## Files
+- Writing Bash scripts
+- Reading user input using the `read` command
+- Storing data in variables
+- Displaying formatted output
+- Executing shell scripts in Linux
 
-- employee.sh
-- README.md
+---
+
+## Project Structure
+
+```
+Task_5/
+├── employee.sh
+└── README.md
+```
+
+---
+
+## Features
+
+- Prompts the user to enter:
+  - Employee Name
+  - Age
+  - Department
+  - Salary
+- Displays the entered information in a clean and organized format.
+- Simple and easy-to-understand implementation.
+
+---
 
 ## How to Run
 
-Make the script executable:
+### 1. Make the script executable
 
 ```bash
 chmod +x employee.sh
 ```
 
-Run the script:
+### 2. Execute the script
 
 ```bash
 ./employee.sh
 ```
 
-## Example Output
+---
 
-```
+## Example
+
+```text
 ========== Employee Registration ==========
 
 Enter Employee Name: Mohamed
@@ -48,3 +72,38 @@ Age           : 22
 Department    : Mechatronics
 Salary        : 12000
 ```
+
+---
+
+## Script Workflow
+
+1. Display the registration title.
+2. Ask the user to enter employee information.
+3. Store the input in variables.
+4. Print all entered information in a formatted output.
+
+---
+
+## Technologies Used
+
+- Ubuntu Linux
+- Bash Shell
+- Nano Text Editor
+
+---
+
+## Learning Outcomes
+
+After completing this assignment, I learned how to:
+
+- Create executable Bash scripts.
+- Read user input using the `read` command.
+- Store and manipulate variables.
+- Display formatted information in the terminal.
+- Run shell scripts in a Linux environment.
+
+---
+
+## Author
+
+**Mohamed Abdelmajeed Saadallah**
