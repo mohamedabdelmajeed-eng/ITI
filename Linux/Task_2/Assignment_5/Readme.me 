@@ -1,0 +1,50 @@
+# Assignment 5 - Employee Registration System
+
+## Description
+
+This assignment implements a simple Bash script called `employee.sh`.
+
+The script asks the user to enter:
+
+- Employee Name
+- Age
+- Department
+- Salary
+
+After collecting the information, it displays all entered data in a formatted output.
+
+## Files
+
+- employee.sh
+- README.md
+
+## How to Run
+
+Make the script executable:
+
+```bash
+chmod +x employee.sh
+```
+
+Run the script:
+
+```bash
+./employee.sh
+```
+
+## Example Output
+
+```
+========== Employee Registration ==========
+
+Enter Employee Name: Mohamed
+Enter Age: 22
+Enter Department: Mechatronics
+Enter Salary: 12000
+
+========== Employee Information ==========
+Employee Name : Mohamed
+Age           : 22
+Department    : Mechatronics
+Salary        : 12000
+```
