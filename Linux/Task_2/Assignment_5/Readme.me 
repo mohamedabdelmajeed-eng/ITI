@@ -1,54 +1,60 @@
-# Assignment 5 – Employee Registration System
+<div align="center">
 
-## Overview
+# 👨‍💼 Employee Registration System
 
-This assignment implements a simple Employee Registration System using a Bash script. The script interacts with the user through the terminal, collects employee information, and displays the entered data in a clear and formatted manner.
+### 🐧 ITI Linux & Bash Assignment 5
 
----
+A simple Bash script that registers employee information through the terminal and displays it in a clean format.
 
-## Objective
+![Bash](https://img.shields.io/badge/Bash-Script-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-The goal of this assignment is to practice:
-
-- Writing Bash scripts
-- Reading user input using the `read` command
-- Storing data in variables
-- Displaying formatted output
-- Executing shell scripts in Linux
+</div>
 
 ---
 
-## Project Structure
+# 📌 Overview
 
-```
+This project is part of the **ITI Linux & Bash Programming Assignments**.
+
+The script collects employee information from the user using interactive input and prints the collected data in a well-formatted output.
+
+---
+
+# ✨ Features
+
+- 👤 Read Employee Name
+- 🎂 Read Employee Age
+- 🏢 Read Department
+- 💰 Read Salary
+- 📋 Display employee information in a formatted report
+- ⚡ Simple and easy-to-read Bash script
+
+---
+
+# 📂 Project Structure
+
+```text
 Task_5/
+│
 ├── employee.sh
-└── README.md
+├── README.md
+└── screenshots/
+    └── output.png
 ```
 
 ---
 
-## Features
+# 🚀 How to Run
 
-- Prompts the user to enter:
-  - Employee Name
-  - Age
-  - Department
-  - Salary
-- Displays the entered information in a clean and organized format.
-- Simple and easy-to-understand implementation.
-
----
-
-## How to Run
-
-### 1. Make the script executable
+### 1️⃣ Give execution permission
 
 ```bash
 chmod +x employee.sh
 ```
 
-### 2. Execute the script
+### 2️⃣ Run the script
 
 ```bash
 ./employee.sh
@@ -56,17 +62,22 @@ chmod +x employee.sh
 
 ---
 
-## Example
+# 🖥️ Example
+
+### Input
 
 ```text
-========== Employee Registration ==========
-
 Enter Employee Name: Mohamed
 Enter Age: 22
 Enter Department: Mechatronics
 Enter Salary: 12000
+```
 
+### Output
+
+```text
 ========== Employee Information ==========
+
 Employee Name : Mohamed
 Age           : 22
 Department    : Mechatronics
@@ -75,35 +86,80 @@ Salary        : 12000
 
 ---
 
-## Script Workflow
+# 📜 Source Code
 
-1. Display the registration title.
-2. Ask the user to enter employee information.
-3. Store the input in variables.
-4. Print all entered information in a formatted output.
+```bash
+#!/bin/bash
 
----
+echo "========== Employee Registration =========="
 
-## Technologies Used
+read -p "Enter Employee Name: " name
+read -p "Enter Age: " age
+read -p "Enter Department: " department
+read -p "Enter Salary: " salary
 
-- Ubuntu Linux
-- Bash Shell
-- Nano Text Editor
-
----
-
-## Learning Outcomes
-
-After completing this assignment, I learned how to:
-
-- Create executable Bash scripts.
-- Read user input using the `read` command.
-- Store and manipulate variables.
-- Display formatted information in the terminal.
-- Run shell scripts in a Linux environment.
+echo
+echo "========== Employee Information =========="
+echo "Employee Name : $name"
+echo "Age           : $age"
+echo "Department    : $department"
+echo "Salary        : $salary"
+```
 
 ---
 
-## Author
+# 🛠 Technologies Used
 
-**Mohamed Abdelmajeed Saadallah**
+| Technology | Description |
+|------------|-------------|
+| 🐧 Linux | Operating System |
+| 🖥 Bash | Shell Scripting |
+| 💻 Terminal | Script Execution |
+
+---
+
+# 📷 Screenshots
+
+Add your screenshots inside the **screenshots** folder.
+
+Example:
+
+```
+screenshots/
+    output.png
+```
+
+Then display them like this:
+
+```markdown
+![Program Output](screenshots/output.png)
+```
+
+---
+
+# 🎯 Learning Objectives
+
+- Working with Bash scripts
+- Using `read` for user input
+- Printing formatted output
+- Making scripts executable using `chmod`
+- Running shell scripts in Linux
+
+---
+
+# 👨‍💻 Author
+
+**Mohamed Abdelmajeed**
+
+Mechatronics Engineering Student  
+ITI Linux & Bash Programming Assignment
+
+---
+
+<div align="center">
+
+⭐ If you like this project, don't forget to star the repository.
+
+Made with ❤️ using Bash
+
+</div>
