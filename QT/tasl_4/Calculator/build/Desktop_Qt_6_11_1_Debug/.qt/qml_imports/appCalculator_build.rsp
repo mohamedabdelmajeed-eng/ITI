@@ -1,0 +1,14 @@
+-rootPath
+/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator
+-cmake-output
+-output-file
+/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/build/Desktop_Qt_6_11_1_Debug/.qt/qml_imports/appCalculator_build.cmake
+-importPath
+/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/build/Desktop_Qt_6_11_1_Debug
+-importPath
+/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/build/Desktop_Qt_6_11_1_Debug/CalculatorApp
+-importPath
+/home/mohamed/Qt/6.11.1/gcc_64/qml
+-qrcFiles
+/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/qmake_CalculatorApp.qrc
+/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/appCalculator_raw_qml_0.qrc

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/CalculatorApp/">
+    <file alias="Main.qml">/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/Main.qml</file>
+  </qresource>
+</RCC>
+

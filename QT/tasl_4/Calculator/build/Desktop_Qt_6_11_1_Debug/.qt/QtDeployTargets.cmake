@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appCalculator_FILE /home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/build/Desktop_Qt_6_11_1_Debug/appCalculator)
+set(__QT_DEPLOY_TARGET_appCalculator_TYPE EXECUTABLE)

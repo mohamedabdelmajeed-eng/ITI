@@ -1,0 +1,6 @@
+module CalculatorApp
+typeinfo appCalculator.qmltypes
+prefer :/qt/qml/CalculatorApp/
+Main 1.0 Main.qml
+depends QtQuick
+

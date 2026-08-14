@@ -1,0 +1,14 @@
+-I
+/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/build/Desktop_Qt_6_11_1_Debug
+-I
+/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/build/Desktop_Qt_6_11_1_Debug/CalculatorApp
+-I
+/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/build/Desktop_Qt_6_11_1_Debug
+-I
+/home/mohamed/Qt/6.11.1/gcc_64/qml
+--resource
+/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/qmake_CalculatorApp.qrc
+--resource
+/home/mohamed/Documents/ITI/QT/tasl_4/Calculator/Qt6_Backend_Calculator/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/appCalculator_raw_qml_0.qrc
+--module
+CalculatorApp
