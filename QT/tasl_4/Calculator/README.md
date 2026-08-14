@@ -235,3 +235,4 @@ Built with **Qt 6**, **QML**, and **C++17**.
 If this project helps you, consider giving the repository a ⭐.
 
 </div>
+....
