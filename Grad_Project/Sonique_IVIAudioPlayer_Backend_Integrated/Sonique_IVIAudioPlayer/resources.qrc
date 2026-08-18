@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/assets">
+        <file alias="icons/back.svg">assets/icons/back.svg</file>
+        <file alias="icons/folder.svg">assets/icons/folder.svg</file>
+        <file alias="icons/previous.svg">assets/icons/previous.svg</file>
+        <file alias="icons/play.svg">assets/icons/play.svg</file>
+        <file alias="icons/pause.svg">assets/icons/pause.svg</file>
+        <file alias="icons/next.svg">assets/icons/next.svg</file>
+        <file alias="icons/stop.svg">assets/icons/stop.svg</file>
+        <file alias="icons/volume-high.svg">assets/icons/volume-high.svg</file>
+        <file alias="icons/volume-muted.svg">assets/icons/volume-muted.svg</file>
+        <file alias="icons/local-audio.svg">assets/icons/local-audio.svg</file>
+        <file alias="icons/radio.svg">assets/icons/radio.svg</file>
+        <file alias="icons/usb.svg">assets/icons/usb.svg</file>
+        <file alias="icons/bluetooth.svg">assets/icons/bluetooth.svg</file>
+        <file alias="images/midnight-drive.svg">assets/images/midnight-drive.svg</file>
+    </qresource>
+</RCC>

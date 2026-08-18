@@ -1,0 +1,11 @@
+module IVIAudioPlayer
+typeinfo appIVIAudioPlayer.qmltypes
+prefer :/qt/qml/IVIAudioPlayer/
+Main 1.0 Main.qml
+SplashScreen 1.0 SplashScreen.qml
+HomePage 1.0 HomePage.qml
+SourceCard 1.0 SourceCard.qml
+SourcePage 1.0 SourcePage.qml
+IVILogo 1.0 IVILogo.qml
+depends QtQuick
+

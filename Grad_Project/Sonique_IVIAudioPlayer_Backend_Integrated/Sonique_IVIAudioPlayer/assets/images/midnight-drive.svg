@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720">
+  <defs>
+    <linearGradient id="sky" x1="120" y1="40" x2="640" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B2140"/>
+      <stop offset="0.45" stop-color="#071529"/>
+      <stop offset="1" stop-color="#030812"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="translate(535 205) rotate(135) scale(172)">
+      <stop stop-color="#CDE7FF" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#5388D8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="moon" x1="470" y1="100" x2="595" y2="265" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FAFF"/>
+      <stop offset=".38" stop-color="#95BEF7"/>
+      <stop offset="1" stop-color="#315A99"/>
+    </linearGradient>
+    <linearGradient id="waveGold" x1="0" y1="420" x2="720" y2="510" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#744A26"/>
+      <stop offset=".42" stop-color="#FFD18B"/>
+      <stop offset=".72" stop-color="#F1A95D"/>
+      <stop offset="1" stop-color="#4A291A"/>
+    </linearGradient>
+    <linearGradient id="waveBlue" x1="20" y1="510" x2="700" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A2E62"/>
+      <stop offset=".48" stop-color="#2B76CA"/>
+      <stop offset="1" stop-color="#071B3A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="720" rx="54" fill="url(#sky)"/>
+  <circle cx="520" cy="190" r="176" fill="url(#halo)"/>
+  <path d="M563 78c-60 17-103 73-103 139 0 45 20 86 52 112-74-17-129-83-129-162 0-92 74-166 166-166 38 0 73 13 101 35-28 12-57 26-87 42Z" fill="url(#moon)" opacity=".95"/>
+  <path d="M564 78c-54 23-91 77-91 139 0 42 17 80 45 107" fill="none" stroke="#E9F3FF" stroke-width="6" stroke-linecap="round" opacity=".78"/>
+
+  <g fill="#F1B76D">
+    <circle cx="74" cy="84" r="2.2"/><circle cx="121" cy="146" r="1.4"/><circle cx="174" cy="74" r="1.8"/>
+    <circle cx="232" cy="123" r="1.5"/><circle cx="302" cy="67" r="2"/><circle cx="348" cy="153" r="1.4"/>
+    <circle cx="414" cy="91" r="1.8"/><circle cx="654" cy="92" r="1.7"/><circle cx="608" cy="154" r="1.3"/>
+    <circle cx="82" cy="212" r="1.6"/><circle cx="146" cy="256" r="2"/><circle cx="246" cy="218" r="1.3"/>
+    <circle cx="315" cy="286" r="1.8"/><circle cx="676" cy="252" r="2"/><circle cx="628" cy="308" r="1.4"/>
+  </g>
+  <g fill="#B8DBFF" opacity=".9">
+    <circle cx="95" cy="118" r="1.3"/><circle cx="205" cy="176" r="1.2"/><circle cx="273" cy="102" r="1.2"/>
+    <circle cx="383" cy="202" r="1.4"/><circle cx="580" cy="52" r="1.2"/><circle cx="664" cy="182" r="1.3"/>
+    <circle cx="55" cy="286" r="1.2"/><circle cx="196" cy="316" r="1.4"/><circle cx="399" cy="307" r="1.2"/>
+  </g>
+
+  <path d="M-30 377c112-60 202-52 283 8 84 62 164 86 250 43 84-42 153-45 247 11v281H-30Z" fill="#05101F"/>
+  <path d="M-30 393c111-67 199-60 285 1 91 65 165 73 249 33 81-38 151-37 246 18" fill="none" stroke="url(#waveGold)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M-20 418c106-54 195-53 280 4 91 60 164 68 247 29 80-37 151-35 233 12" fill="none" stroke="#FFE1AE" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+  <path d="M-25 448c116-44 202-36 281 14 88 56 167 58 249 21 79-35 148-32 236 10" fill="none" stroke="#9B632E" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <path d="M-35 486c111-54 204-42 291 13 85 54 164 58 254 18 79-35 148-28 232 15" fill="none" stroke="url(#waveBlue)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M-20 513c101-45 190-36 276 14 88 51 169 54 255 19 80-33 147-26 231 14" fill="none" stroke="#4E9BE6" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <path d="M-26 552c109-48 199-37 282 12 88 52 170 54 257 20 75-30 145-21 229 18" fill="none" stroke="#0D376B" stroke-width="18" stroke-linecap="round"/>
+  <path d="M-24 583c106-42 193-30 280 17 91 49 171 48 260 17 74-26 144-16 227 20" fill="none" stroke="#225D9E" stroke-width="5" stroke-linecap="round"/>
+  <path d="M-26 623c101-38 194-25 282 18 91 44 176 43 263 15 73-23 140-13 223 20" fill="none" stroke="#092849" stroke-width="20" stroke-linecap="round"/>
+  <path d="M-20 657c97-30 187-20 276 18 93 40 178 38 263 14 70-20 139-9 223 22" fill="none" stroke="#164B83" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+
+  <rect x="1.5" y="1.5" width="717" height="717" rx="52.5" fill="none" stroke="#8295A8" stroke-opacity=".38" stroke-width="3"/>
+</svg>

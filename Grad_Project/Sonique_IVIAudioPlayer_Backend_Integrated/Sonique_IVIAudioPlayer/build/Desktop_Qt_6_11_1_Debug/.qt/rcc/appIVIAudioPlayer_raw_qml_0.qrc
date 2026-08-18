@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="/qt/qml/IVIAudioPlayer/">
+    <file alias="Main.qml">/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/Main.qml</file>
+    <file alias="SplashScreen.qml">/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/SplashScreen.qml</file>
+    <file alias="HomePage.qml">/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/HomePage.qml</file>
+    <file alias="SourceCard.qml">/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/SourceCard.qml</file>
+    <file alias="SourcePage.qml">/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/SourcePage.qml</file>
+    <file alias="IVILogo.qml">/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/IVILogo.qml</file>
+  </qresource>
+</RCC>
+

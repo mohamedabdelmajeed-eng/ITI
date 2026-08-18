@@ -1,0 +1,14 @@
+-rootPath
+/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer
+-cmake-output
+-output-file
+/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/build/Desktop_Qt_6_11_1_Debug/.qt/qml_imports/appIVIAudioPlayer_conf.cmake
+-importPath
+/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/build/Desktop_Qt_6_11_1_Debug
+-importPath
+/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/build/Desktop_Qt_6_11_1_Debug/IVIAudioPlayer
+-importPath
+/home/mohamed/Qt/6.11.1/gcc_64/qml
+-qrcFiles
+/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/qmake_IVIAudioPlayer.qrc
+/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/appIVIAudioPlayer_raw_qml_0.qrc

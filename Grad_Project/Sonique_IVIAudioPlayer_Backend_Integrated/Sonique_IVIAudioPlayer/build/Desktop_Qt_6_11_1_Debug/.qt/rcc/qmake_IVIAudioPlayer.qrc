@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/IVIAudioPlayer">
+    <file alias="qmldir">/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/build/Desktop_Qt_6_11_1_Debug/IVIAudioPlayer/qmldir</file>
+  </qresource>
+</RCC>
+

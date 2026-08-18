@@ -1,0 +1,515 @@
+{
+    "classes": [
+        {
+            "className": "SoniquePlaybackEngine",
+            "lineNumber": 11,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 13,
+                    "lineNumber": 69,
+                    "name": "togglePlayback",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 14,
+                    "lineNumber": 70,
+                    "name": "stopPlayback",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 15,
+                    "lineNumber": 71,
+                    "name": "playNext",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 16,
+                    "lineNumber": 72,
+                    "name": "playPrevious",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "milliseconds",
+                            "type": "qint64"
+                        }
+                    ],
+                    "index": 17,
+                    "lineNumber": 73,
+                    "name": "seekTo",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "folderUrl",
+                            "type": "QUrl"
+                        }
+                    ],
+                    "index": 18,
+                    "lineNumber": 74,
+                    "name": "loadLocalFolder",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 19,
+                    "lineNumber": 75,
+                    "name": "useLocalLibrary",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "milliseconds",
+                            "type": "qint64"
+                        }
+                    ],
+                    "index": 20,
+                    "isConst": true,
+                    "lineNumber": 76,
+                    "name": "formatClock",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "stationIndex",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 21,
+                    "lineNumber": 77,
+                    "name": "tuneStation",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "country",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "streamUrl",
+                            "type": "QUrl"
+                        }
+                    ],
+                    "index": 22,
+                    "lineNumber": 78,
+                    "name": "saveStation",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 0,
+                    "lineNumber": 15,
+                    "name": "playbackActive",
+                    "notify": "playbackActiveChanged",
+                    "override": false,
+                    "read": "isPlaybackActive",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 1,
+                    "lineNumber": 16,
+                    "name": "playheadMs",
+                    "notify": "playheadChanged",
+                    "override": false,
+                    "read": "playhead",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "qint64",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 2,
+                    "lineNumber": 17,
+                    "name": "mediaLengthMs",
+                    "notify": "mediaLengthChanged",
+                    "override": false,
+                    "read": "mediaLength",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "qint64",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 3,
+                    "lineNumber": 19,
+                    "name": "silenceEnabled",
+                    "notify": "silenceEnabledChanged",
+                    "override": false,
+                    "read": "isSilenced",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setSilenced"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 4,
+                    "lineNumber": 21,
+                    "name": "outputLevel",
+                    "notify": "outputLevelChanged",
+                    "override": false,
+                    "read": "outputLevel",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setOutputLevel"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 5,
+                    "lineNumber": 24,
+                    "name": "localTracks",
+                    "notify": "localTracksChanged",
+                    "override": false,
+                    "read": "localTracks",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QStringList",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 6,
+                    "lineNumber": 25,
+                    "name": "selectedTrackIndex",
+                    "notify": "selectedTrackIndexChanged",
+                    "override": false,
+                    "read": "selectedTrackIndex",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 7,
+                    "lineNumber": 28,
+                    "name": "trackTitle",
+                    "notify": "trackDetailsChanged",
+                    "override": false,
+                    "read": "trackTitle",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 8,
+                    "lineNumber": 29,
+                    "name": "trackArtist",
+                    "notify": "trackDetailsChanged",
+                    "override": false,
+                    "read": "trackArtist",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 9,
+                    "lineNumber": 30,
+                    "name": "trackAlbum",
+                    "notify": "trackDetailsChanged",
+                    "override": false,
+                    "read": "trackAlbum",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 10,
+                    "lineNumber": 31,
+                    "name": "trackGenre",
+                    "notify": "trackDetailsChanged",
+                    "override": false,
+                    "read": "trackGenre",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 11,
+                    "lineNumber": 32,
+                    "name": "lastPlaybackError",
+                    "notify": "playbackErrorChanged",
+                    "override": false,
+                    "read": "lastPlaybackError",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 12,
+                    "lineNumber": 35,
+                    "name": "radioActive",
+                    "notify": "radioActiveChanged",
+                    "override": false,
+                    "read": "isRadioActive",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 13,
+                    "lineNumber": 36,
+                    "name": "stationCatalog",
+                    "notify": "stationCatalogChanged",
+                    "override": false,
+                    "read": "stationCatalog",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 14,
+                    "lineNumber": 38,
+                    "name": "tunedStationName",
+                    "notify": "tunedStationChanged",
+                    "override": false,
+                    "read": "tunedStationName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 15,
+                    "lineNumber": 40,
+                    "name": "tunedStationCountry",
+                    "notify": "tunedStationChanged",
+                    "override": false,
+                    "read": "tunedStationCountry",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 16,
+                    "lineNumber": 42,
+                    "name": "streamBuffering",
+                    "notify": "streamBufferingChanged",
+                    "override": false,
+                    "read": "isStreamBuffering",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                }
+            ],
+            "qualifiedClassName": "SoniquePlaybackEngine",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "lineNumber": 83,
+                    "name": "playbackActiveChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "lineNumber": 84,
+                    "name": "playheadChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "lineNumber": 85,
+                    "name": "mediaLengthChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "lineNumber": 86,
+                    "name": "silenceEnabledChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "lineNumber": 87,
+                    "name": "outputLevelChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "lineNumber": 88,
+                    "name": "localTracksChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 6,
+                    "lineNumber": 89,
+                    "name": "selectedTrackIndexChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "lineNumber": 90,
+                    "name": "trackDetailsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "lineNumber": 91,
+                    "name": "playbackErrorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 9,
+                    "lineNumber": 92,
+                    "name": "radioActiveChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 10,
+                    "lineNumber": 93,
+                    "name": "stationCatalogChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "lineNumber": 94,
+                    "name": "tunedStationChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 12,
+                    "lineNumber": 95,
+                    "name": "streamBufferingChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "soniqueplaybackengine.h",
+    "outputRevision": 69
+}

@@ -1,0 +1,10 @@
+--resource
+/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/qmake_IVIAudioPlayer.qrc
+--resource
+/home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/build/Desktop_Qt_6_11_1_Debug/.qt/rcc/appIVIAudioPlayer_raw_qml_0.qrc
+/qt/qml/IVIAudioPlayer/Main.qml
+/qt/qml/IVIAudioPlayer/SplashScreen.qml
+/qt/qml/IVIAudioPlayer/HomePage.qml
+/qt/qml/IVIAudioPlayer/SourceCard.qml
+/qt/qml/IVIAudioPlayer/SourcePage.qml
+/qt/qml/IVIAudioPlayer/IVILogo.qml

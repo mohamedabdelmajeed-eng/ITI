@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appIVIAudioPlayer_FILE /home/mohamed/Sonique_IVIAudioPlayer_Backend_Integrated/Sonique_IVIAudioPlayer/build/Desktop_Qt_6_11_1_Debug/appIVIAudioPlayer)
+set(__QT_DEPLOY_TARGET_appIVIAudioPlayer_TYPE EXECUTABLE)
