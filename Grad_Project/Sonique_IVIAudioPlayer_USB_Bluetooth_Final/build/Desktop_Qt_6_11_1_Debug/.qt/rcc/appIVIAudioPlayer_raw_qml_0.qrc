@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="/qt/qml/IVIAudioPlayer/">
+    <file alias="Main.qml">/home/mohamed/Documents/ITI/Grad_Project/Sonique_IVIAudioPlayer_USB_Bluetooth_Final/Main.qml</file>
+    <file alias="SplashScreen.qml">/home/mohamed/Documents/ITI/Grad_Project/Sonique_IVIAudioPlayer_USB_Bluetooth_Final/SplashScreen.qml</file>
+    <file alias="HomePage.qml">/home/mohamed/Documents/ITI/Grad_Project/Sonique_IVIAudioPlayer_USB_Bluetooth_Final/HomePage.qml</file>
+    <file alias="SourceCard.qml">/home/mohamed/Documents/ITI/Grad_Project/Sonique_IVIAudioPlayer_USB_Bluetooth_Final/SourceCard.qml</file>
+    <file alias="SourcePage.qml">/home/mohamed/Documents/ITI/Grad_Project/Sonique_IVIAudioPlayer_USB_Bluetooth_Final/SourcePage.qml</file>
+    <file alias="IVILogo.qml">/home/mohamed/Documents/ITI/Grad_Project/Sonique_IVIAudioPlayer_USB_Bluetooth_Final/IVILogo.qml</file>
+  </qresource>
+</RCC>
+

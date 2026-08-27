@@ -1,0 +1,223 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-bb35e3d142d2d940a2d0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "IVIAudioPlayer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-57036e5ac4a046ffbc63.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-be056b98ae193a496f9d.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-0e55cb45b2608f6de8cc.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-a3f306bab49c9e95130d.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-ca044bd155ab1a141384.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appIVIAudioPlayer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appIVIAudioPlayer-Debug-4733803679945c4bc875.json",
+					"name" : "appIVIAudioPlayer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appIVIAudioPlayer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appIVIAudioPlayer_autogen-Debug-58f1b8981f3db81c13a2.json",
+					"name" : "appIVIAudioPlayer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appIVIAudioPlayer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appIVIAudioPlayer_autogen_timestamp_deps-Debug-da023d8537e19778c5ce.json",
+					"name" : "appIVIAudioPlayer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appIVIAudioPlayer_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appIVIAudioPlayer_copy_qml-Debug-326002f2cf234e1ba7d8.json",
+					"name" : "appIVIAudioPlayer_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appIVIAudioPlayer_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appIVIAudioPlayer_copy_res-Debug-5cc5b2ea10209b59332e.json",
+					"name" : "appIVIAudioPlayer_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appIVIAudioPlayer_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appIVIAudioPlayer_qmlimportscan-Debug-cb859471477e6f8daa51.json",
+					"name" : "appIVIAudioPlayer_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appIVIAudioPlayer_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appIVIAudioPlayer_qmllint-Debug-ea8c4852be7c3b4d7d47.json",
+					"name" : "appIVIAudioPlayer_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appIVIAudioPlayer_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appIVIAudioPlayer_qmllint_json-Debug-1f64b2e35bfc7b3ae062.json",
+					"name" : "appIVIAudioPlayer_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appIVIAudioPlayer_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appIVIAudioPlayer_qmllint_module-Debug-ae429acf18766e5f0e12.json",
+					"name" : "appIVIAudioPlayer_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appIVIAudioPlayer_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appIVIAudioPlayer_qmltyperegistration-Debug-99a6a418e1a6f86b8778.json",
+					"name" : "appIVIAudioPlayer_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "clean_qml_context_properties::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clean_qml_context_properties-Debug-e8149efa0cd90682567b.json",
+					"name" : "clean_qml_context_properties",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dump_qml_context_properties::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dump_qml_context_properties-Debug-6c651e5e596255f7ac03.json",
+					"name" : "dump_qml_context_properties",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_qmlls_build_ini_file::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_qmlls_build_ini_file-Debug-13e2ba432d4517cf5064.json",
+					"name" : "generate_qmlls_build_ini_file",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appIVIAudioPlayer_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appIVIAudioPlayer_aotstats_target-Debug-ac68b561e015d22dee80.json",
+					"name" : "module_appIVIAudioPlayer_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mohamed/Documents/ITI/Grad_Project/Sonique_IVIAudioPlayer_USB_Bluetooth_Final/build/Desktop_Qt_6_11_1_Debug",
+		"source" : "/home/mohamed/Documents/ITI/Grad_Project/Sonique_IVIAudioPlayer_USB_Bluetooth_Final"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

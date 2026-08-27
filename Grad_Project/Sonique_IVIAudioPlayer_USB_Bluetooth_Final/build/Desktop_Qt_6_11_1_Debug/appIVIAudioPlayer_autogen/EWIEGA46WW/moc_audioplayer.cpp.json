@@ -1,0 +1,928 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "AudioPlayer",
+            "lineNumber": 12,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 27,
+                    "lineNumber": 130,
+                    "name": "playPause",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 28,
+                    "lineNumber": 131,
+                    "name": "stop",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 29,
+                    "lineNumber": 132,
+                    "name": "next",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 30,
+                    "lineNumber": 133,
+                    "name": "previous",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "folder_path",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 31,
+                    "lineNumber": 134,
+                    "name": "loadFolder",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 32,
+                    "lineNumber": 135,
+                    "name": "useLocalLibrary",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "ms",
+                            "type": "qint64"
+                        }
+                    ],
+                    "index": 33,
+                    "lineNumber": 136,
+                    "name": "formatTime",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "radio_station_index",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 34,
+                    "lineNumber": 139,
+                    "name": "playRadioStation",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 35,
+                    "lineNumber": 140,
+                    "name": "addRadioStation",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "folder_path",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 36,
+                    "lineNumber": 143,
+                    "name": "loadUsbFolder",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 37,
+                    "lineNumber": 144,
+                    "name": "useUsbLibrary",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "usb_track_index",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 38,
+                    "lineNumber": 145,
+                    "name": "playUsbTrack",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 39,
+                    "lineNumber": 146,
+                    "name": "clearUsb",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 40,
+                    "lineNumber": 149,
+                    "name": "useBluetoothSource",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 41,
+                    "lineNumber": 150,
+                    "name": "refreshBluetoothDevices",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 42,
+                    "lineNumber": 151,
+                    "name": "startBluetoothDiscovery",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 43,
+                    "lineNumber": 152,
+                    "name": "stopBluetoothDiscovery",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "bluetooth_device_index",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 44,
+                    "lineNumber": 153,
+                    "name": "connectBluetoothDevice",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 45,
+                    "lineNumber": 154,
+                    "name": "disconnectBluetoothDevice",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 0,
+                    "lineNumber": 18,
+                    "name": "playing",
+                    "notify": "playingStateChanged",
+                    "override": false,
+                    "read": "getPlayingState",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 1,
+                    "lineNumber": 19,
+                    "name": "position",
+                    "notify": "positionChanged",
+                    "override": false,
+                    "read": "getPosition",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "qint64",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setPosition"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 2,
+                    "lineNumber": 20,
+                    "name": "duration",
+                    "notify": "durationChanged",
+                    "override": false,
+                    "read": "getDuration",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "qint64",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 3,
+                    "lineNumber": 23,
+                    "name": "muted",
+                    "notify": "muteStateChanged",
+                    "override": false,
+                    "read": "getMuteState",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setMuteState"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 4,
+                    "lineNumber": 24,
+                    "name": "volume",
+                    "notify": "volumeChanged",
+                    "override": false,
+                    "read": "getVolume",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "float",
+                    "user": false,
+                    "virtual": false,
+                    "write": "setVolume"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 5,
+                    "lineNumber": 27,
+                    "name": "playlist",
+                    "notify": "playlistChanged",
+                    "override": false,
+                    "read": "getPlaylist",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QStringList",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 6,
+                    "lineNumber": 28,
+                    "name": "currentPlaylistIndex",
+                    "notify": "CurrentPlaylistIndexChanged",
+                    "override": false,
+                    "read": "getCurrentPlaylistIndex",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 7,
+                    "lineNumber": 32,
+                    "name": "isRadioMode",
+                    "notify": "radioModeChanged",
+                    "override": false,
+                    "read": "getRadioMode",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 8,
+                    "lineNumber": 33,
+                    "name": "radioStations",
+                    "notify": "radioStationsChanged",
+                    "override": false,
+                    "read": "getRadioStations",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 9,
+                    "lineNumber": 34,
+                    "name": "currentRadioStationName",
+                    "notify": "currentRadioStationNameChanged",
+                    "override": false,
+                    "read": "getCurrentRadioStationName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 10,
+                    "lineNumber": 36,
+                    "name": "currentRadioStationCountry",
+                    "notify": "currentRadioStationCountryChanged",
+                    "override": false,
+                    "read": "getCurrentStationCountry",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 11,
+                    "lineNumber": 38,
+                    "name": "radioReconnecting",
+                    "notify": "radioReconnectingStateChanged",
+                    "override": false,
+                    "read": "getRadioReconnectingState",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 12,
+                    "lineNumber": 42,
+                    "name": "isUsbMode",
+                    "notify": "usbModeChanged",
+                    "override": false,
+                    "read": "getUsbMode",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 13,
+                    "lineNumber": 43,
+                    "name": "usbConnected",
+                    "notify": "usbConnectedChanged",
+                    "override": false,
+                    "read": "getUsbConnected",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 14,
+                    "lineNumber": 44,
+                    "name": "usbRootPath",
+                    "notify": "usbRootPathChanged",
+                    "override": false,
+                    "read": "getUsbRootPath",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 15,
+                    "lineNumber": 45,
+                    "name": "usbTracks",
+                    "notify": "usbTracksChanged",
+                    "override": false,
+                    "read": "getUsbTracks",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QStringList",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 16,
+                    "lineNumber": 46,
+                    "name": "currentUsbTrackIndex",
+                    "notify": "currentUsbTrackIndexChanged",
+                    "override": false,
+                    "read": "getCurrentUsbTrackIndex",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 17,
+                    "lineNumber": 50,
+                    "name": "isBluetoothMode",
+                    "notify": "bluetoothModeChanged",
+                    "override": false,
+                    "read": "getBluetoothMode",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 18,
+                    "lineNumber": 51,
+                    "name": "bluetoothAvailable",
+                    "notify": "bluetoothAvailableChanged",
+                    "override": false,
+                    "read": "getBluetoothAvailable",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 19,
+                    "lineNumber": 52,
+                    "name": "bluetoothScanning",
+                    "notify": "bluetoothScanningChanged",
+                    "override": false,
+                    "read": "getBluetoothScanning",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 20,
+                    "lineNumber": 53,
+                    "name": "bluetoothConnected",
+                    "notify": "bluetoothConnectedChanged",
+                    "override": false,
+                    "read": "getBluetoothConnected",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 21,
+                    "lineNumber": 54,
+                    "name": "bluetoothDevices",
+                    "notify": "bluetoothDevicesChanged",
+                    "override": false,
+                    "read": "getBluetoothDevices",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 22,
+                    "lineNumber": 55,
+                    "name": "bluetoothDeviceName",
+                    "notify": "bluetoothDeviceChanged",
+                    "override": false,
+                    "read": "getBluetoothDeviceName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 23,
+                    "lineNumber": 56,
+                    "name": "bluetoothDeviceAddress",
+                    "notify": "bluetoothDeviceChanged",
+                    "override": false,
+                    "read": "getBluetoothDeviceAddress",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 24,
+                    "lineNumber": 57,
+                    "name": "bluetoothPlaybackStatus",
+                    "notify": "bluetoothPlaybackStatusChanged",
+                    "override": false,
+                    "read": "getBluetoothPlaybackStatus",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 25,
+                    "lineNumber": 59,
+                    "name": "bluetoothMediaControlsAvailable",
+                    "notify": "bluetoothMediaControlsAvailableChanged",
+                    "override": false,
+                    "read": "getBluetoothMediaControlsAvailable",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 26,
+                    "lineNumber": 63,
+                    "name": "audioTitle",
+                    "notify": "metaDataChanged",
+                    "override": false,
+                    "read": "getAudioTitle",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 27,
+                    "lineNumber": 64,
+                    "name": "audioAuthor",
+                    "notify": "metaDataChanged",
+                    "override": false,
+                    "read": "getAudioAuthor",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 28,
+                    "lineNumber": 65,
+                    "name": "audioAlbum",
+                    "notify": "metaDataChanged",
+                    "override": false,
+                    "read": "getAudioAlbum",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 29,
+                    "lineNumber": 66,
+                    "name": "audioType",
+                    "notify": "metaDataChanged",
+                    "override": false,
+                    "read": "getAudioType",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 30,
+                    "lineNumber": 67,
+                    "name": "errorString",
+                    "notify": "errorOccurred",
+                    "override": false,
+                    "read": "getErrorString",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "virtual": false
+                }
+            ],
+            "qualifiedClassName": "AudioPlayer",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "lineNumber": 158,
+                    "name": "playingStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "lineNumber": 159,
+                    "name": "positionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "lineNumber": 160,
+                    "name": "durationChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "lineNumber": 161,
+                    "name": "muteStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "lineNumber": 162,
+                    "name": "volumeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "lineNumber": 165,
+                    "name": "playlistChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 6,
+                    "lineNumber": 166,
+                    "name": "CurrentPlaylistIndexChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "lineNumber": 169,
+                    "name": "radioModeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "lineNumber": 170,
+                    "name": "radioStationsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 9,
+                    "lineNumber": 171,
+                    "name": "currentRadioStationNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 10,
+                    "lineNumber": 172,
+                    "name": "currentRadioStationCountryChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "lineNumber": 173,
+                    "name": "radioReconnectingStateChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 12,
+                    "lineNumber": 176,
+                    "name": "usbModeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 13,
+                    "lineNumber": 177,
+                    "name": "usbConnectedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 14,
+                    "lineNumber": 178,
+                    "name": "usbRootPathChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 15,
+                    "lineNumber": 179,
+                    "name": "usbTracksChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 16,
+                    "lineNumber": 180,
+                    "name": "currentUsbTrackIndexChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 17,
+                    "lineNumber": 183,
+                    "name": "bluetoothModeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 18,
+                    "lineNumber": 184,
+                    "name": "bluetoothAvailableChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 19,
+                    "lineNumber": 185,
+                    "name": "bluetoothScanningChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 20,
+                    "lineNumber": 186,
+                    "name": "bluetoothConnectedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 21,
+                    "lineNumber": 187,
+                    "name": "bluetoothDevicesChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 22,
+                    "lineNumber": 188,
+                    "name": "bluetoothDeviceChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 23,
+                    "lineNumber": 189,
+                    "name": "bluetoothPlaybackStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 24,
+                    "lineNumber": 190,
+                    "name": "bluetoothMediaControlsAvailableChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 25,
+                    "lineNumber": 193,
+                    "name": "metaDataChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 26,
+                    "lineNumber": 194,
+                    "name": "errorOccurred",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "audioplayer.h",
+    "outputRevision": 69
+}
